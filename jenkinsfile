@@ -1,7 +1,15 @@
 pipeline {
     agent any
-
+    tools {
+            maven 'Maven_3.5.2'
+        }
     stages {
+        stage('Source') { // Get code
+          steps {
+            // get code from our Git repository
+            git 'https://github.com/girish513/ActuatorExample'
+          }
+        }
         stage ('Compile Stage') {
 
             steps {

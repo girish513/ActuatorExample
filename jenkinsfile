@@ -4,7 +4,7 @@ pipeline {
             maven 'Maven_3.5.2'
         }
     stages {
-        stage('Source') { // Get code
+        stage('Source Code') {
           steps {
             git 'https://github.com/girish513/ActuatorExample'
             echo 'Get Code from GIT Repo'

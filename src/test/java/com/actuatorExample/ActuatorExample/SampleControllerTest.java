@@ -37,7 +37,7 @@ class SampleControllerTest {
 
     @Test
     void getHello() {
-        String data = "HELLO";
+        String data = "ABCDEF";
         String result = sampleController.getHello();
         Assertions.assertEquals(data,result);
     }

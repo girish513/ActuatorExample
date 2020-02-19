@@ -33,4 +33,12 @@ class SampleControllerTest {
         String result = sampleController.getDisplay();
         Assertions.assertEquals(data, result);
     }
+
+
+    @Test
+    void getHello() {
+        String data = "HELLO";
+        String result = sampleController.getHello();
+        Assertions.assertEquals(data,result);
+    }
 }

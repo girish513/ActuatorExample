@@ -9,7 +9,7 @@ class SampleServiceTest {
 
     @Test
     void getData() {
-        String data = "123456";
+        String data = "HAHGHSGHGS";
         assertNotNull(data);
     }
 }

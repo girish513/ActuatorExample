@@ -16,11 +16,10 @@ public class SampleController {
     @GetMapping("/hello")
     public String getDisplay(){
         return sampleService.getData();
-
     }
 
     @RequestMapping(value = "/getHello",method = RequestMethod.GET)
     public String getHello(){
-        return "HELLO";
+        return "ABCDEF";
     }
 }
